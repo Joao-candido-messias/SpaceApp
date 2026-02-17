@@ -7,7 +7,7 @@ const BannerEstilizado = styled.figure`
     display: flex;
     align-items: center;
     min-height: 328px;
-    margin: 0 0 0 4em;
+    margin: 0;
     border-radius: 20px;
     max-width: 100%;
     background-size: cover;
