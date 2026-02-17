@@ -15,7 +15,7 @@ const BarraLateral = () => {
             <nav>
                 <ListaEstilizada>
                    <ItemNavegacao iconeAtivo="/icones/home-ativo.png" iconeInativo="/icones/home-inativo.png" ativo={true}>
-                        Inicio
+                        Início
                     </ItemNavegacao>
                      <ItemNavegacao iconeAtivo="/icones/mais-vistas-ativo.png" iconeInativo="/icones/mais-vistas-inativo.png">
                         Mais Vistos
