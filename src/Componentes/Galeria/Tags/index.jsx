@@ -15,9 +15,11 @@ const TagsButton = styled.button`
     min-width: 77px;
     padding: 8px 10px;  
     border-radius: 10px;
-    border: none;
+    border:2px solid transparent;
+    &:hover {border-color: #C98CF1;}
     background-color:#D9D9D94D;
     color:#D9D9D9;
+    cursor: pointer;    
     /* border-image: linear-gradient(
         to left,
         #C98CF1,
@@ -28,7 +30,7 @@ const TagsButton = styled.button`
 const Tags = () =>{
     return(
         <TagsContainer>
-            <p  >Busque por tags:</p>
+            <p>Busque por tags:</p>
             {tags.map(tag => <TagsButton key={tag.id}>{tag.titulo}</TagsButton>) }
         </TagsContainer>
     )
