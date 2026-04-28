@@ -5,6 +5,8 @@ import BarraLateral from "./Componentes/BarraLateral"
 import Banner from "./Componentes/Banner"
 import bannerImg from "./assets/banner.png";
 import Galeria from "./Componentes/Galeria"
+import Fotos from "./fotos.json"
+import { useState } from "react"
 
 const FundoGradiente = styled.div`
   background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
@@ -29,7 +31,9 @@ const ConteudoDaGaleria = styled.section`
   flex-grow: 1;
 `
 
-function App() {
+const App = () => {
+
+  const [fotosDaGaleria, setFotosDaGaleria] = useState(Fotos)
   return (
     <FundoGradiente>
       <EstilosGlobais />
@@ -44,7 +48,7 @@ function App() {
             texto={"A galeria mais\ncompleta de\nfotos do espaço!"}
             backgroundImage={bannerImg}
           />
-          <Galeria/>
+          <Galeria fotos={fotosDaGaleria}/>
           </ConteudoDaGaleria>
           
         </MainContainer>
